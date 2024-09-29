@@ -1,0 +1,422 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    box-shadow: 0px 0px 12px 0px gray;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.inner-header {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 130px;
+}
+
+.header-logo img {
+    width: 100%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+
+.header-content ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-content ul li {
+    padding: 15px 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.8px;
+}
+
+.header-content ul li a {
+    color: black;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../IMAGES/the-town-bg-01.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px 0px;
+}
+
+.banner h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.banner i {
+    color: white;
+    font-size: 80px;
+}
+
+
+.banner i:hover {
+    color: #3496d8;
+    transition: 1s;
+}
+
+.section {
+    padding: 80px 0px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-left {
+    flex-basis: 45%;
+}
+
+.section-left img {
+    width: 100%;
+}
+
+.section-right {
+    flex-basis: 45%;
+}
+
+.section-right h2 {
+    font-size: 45px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 25px;
+    color: #3496d8;
+}
+
+.section-right p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 30px;
+    color: #8f8f8f;
+    padding-bottom: 20px;
+}
+
+.section-right button {
+    padding: 13px 40px;
+    background: #3496d8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+.section1 {
+    width: 1200px;
+    padding: 10px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.sec i {
+    font-size: 60px;
+    color: #3496d8;
+}
+
+.sec h3 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    color: #3496d8;
+}
+
+.sec p {
+    font-size: 19px;
+    text-align: center;
+    padding: 0px;
+    line-height: 30px;
+    color: #8f8f8f;
+}
+
+.section2 {
+    width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.section2 h3 {
+    font-size: 45px;
+    color: #3496d8;
+    text-align: center;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 25px;
+}
+
+.section2 p {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    color: #8f8f8f;
+    font-weight: normal;
+}
+
+.outer{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    flex-grow: 1;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery:hover .gallery-content{
+    opacity: 1;
+    padding-top: 140px;
+    /* display: block; */
+}
+.gallery:hover .gallery-border{
+       bottom: 0px;
+    /* display: block; */
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.gallery-content{
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    line-height: 42px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 2s;
+
+}
+
+.gallery-border{
+    padding: 5px;
+    background-color: blue;
+    box-sizing: border-box;    
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    transition: 2s;
+}
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background-image: url('../IMAGES/the-town-bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.inner-footer {
+    width: 1200px;
+    margin: auto;
+}
+
+.contact-us h3 {
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 100px;
+    padding-top: 80px;
+}
+
+.border1 {
+    height: 0.1px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.border2 {
+    width: 280px;
+    height: 10px;
+    background-color: white;
+    margin-left: 100px;
+}
+
+.inner-footer p {
+    margin: 30px 100px;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: normal;
+    line-height: 35px;
+
+}
+
+.inner-footer1{
+    width: 1000px;
+    margin: auto;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    display: flex;
+    gap: 0px 20px;
+}
+
+.contact :hover{
+    transition: 2s;
+    color: blue;
+}
+
+.contact i{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact span{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    line-height: 38px;
+}
+
+
+
+.mail{
+    display: flex;
+    gap: 0px 20px;
+    margin-right: 210px;
+}
+
+
+.mail :hover{
+    transition: 2s;
+    color: blue;
+}
+
+.mail i{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.mail span{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    line-height: 38px;
+}
+
+.map :hover{
+    transition: 2s;
+    color: blue;
+}
+
+.map{
+    display: flex;
+    gap: 0px 20px;
+}
+
+.map i{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.map span{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    line-height: 38px;
+}
+
+
+.subs{
+    display: flex;
+    gap: 0px 20px;
+}
+
+.subs input{
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: inherit;
+    width: 235px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.subs input::placeholder{
+    color: white;
+}
+
+.subs .btn{
+    border-radius: 5px;
+    padding: 10px 29px;
+    font-size: 14px;
+    background: #ced4da;
+    border: none;
+}
+
+.footer .copy p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color :rgba(255, 255, 255, 0.679);
+    margin-top: 140px;
+    font-size: 15px;
+  
+}
+.footer .copy p span{
+    transition: 0.5s;
+}
